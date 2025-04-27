@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Ingressos - Seu Evento</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Compre seu Ingresso</h1>
+    <p>Garanta já a sua vaga para o evento do ano!</p>
+</header>
+
+<div class="container">
+    <div class="event-info">
+        <h2>Nome do Evento</h2>
+        <p><strong>Data:</strong> 10 de Agosto de 2025</p>
+        <p><strong>Local:</strong> Centro de Eventos ABC</p>
+        <p><strong>Descrição:</strong> Um evento incrível com shows, palestras e muito mais! Não fique de fora.</p>
+        <p class="counter">Ingressos disponíveis: <span id="ingressosDisponiveis">100</span></p>
+    </div>
+
+    <div class="ticket-form">
+        <h2>Comprar Ingressos</h2>
+        <form id="formCompra">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="quantidade">Quantidade de Ingressos:</label>
+            <select id="quantidade" name="quantidade" required>
+                <option value="">Selecione</option>
+                <option value="1">1 Ingresso</option>
+                <option value="2">2 Ingressos</option>
+                <option value="3">3 Ingressos</option>
+                <option value="4">4 Ingressos</option>
+            </select>
+
+            <div class="payment-methods">
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="">Selecione</option>
+                    <option value="pix">PIX</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                </select>
+            </div>
+
+            <button type="submit">Comprar Agora</button>
+        </form>
+
+        <div class="qr-code" id="qrCodeArea" style="display:none;">
+            <h3>Pagamento via QR Code</h3>
+            <div id="qrcode"></div>
+        </div>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://wa.me/seunumerowhatsapp" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/seuperfil" target="_blank" class="instagram">Instagram</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Seu Evento - Todos os direitos reservados
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

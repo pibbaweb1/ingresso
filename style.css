@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.event-info, .ticket-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.ticket-form input, .ticket-form select, .ticket-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.ticket-form button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.ticket-form button:hover {
+    background: #218838;
+}
+.payment-methods {
+    margin-bottom: 20px;
+}
+.qr-code {
+    margin-top: 20px;
+    text-align: center;
+}
+.social-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+.social-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.social-buttons a.instagram {
+    background: #e1306c;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+    margin-top: 20px;
+}
+.counter {
+    font-weight: bold;
+    font-size: 20px;
+    color: #dc3545;
+    margin-top: 10px;
+}
